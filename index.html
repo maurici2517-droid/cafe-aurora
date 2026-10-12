@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Aurora | Málaga</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf4;
+      color: #30251f;
+    }
+
+    header {
+      background: #38251d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e9bb81;
+    }
+
+    .hero {
+      min-height: 450px;
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.55),
+          rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600")
+        center/cover;
+
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #c88b4a;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .boton:hover {
+      background: #a86b30;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .productos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .producto {
+      background: white;
+      width: 280px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .producto h3 {
+      margin-bottom: 5px;
+    }
+
+    .producto p {
+      padding: 0 15px 15px;
+    }
+
+    .precio {
+      color: #a86b30;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nosotros {
+      background: #f1e5d7;
+    }
+
+    .nosotros p {
+      max-width: 650px;
+      margin: 20px auto;
+      line-height: 1.8;
+    }
+
+    .contacto {
+      background: #fffaf4;
+    }
+
+    footer {
+      background: #38251d;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>☕ Café Aurora</h1>
+    <p>El sabor de los buenos momentos</p>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero" id="inicio">
+      <h2>Bienvenido a Café Aurora</h2>
+      <p>El mejor café para empezar tu día en Málaga</p>
+      <a href="#menu" class="boton">Descubre nuestro menú</a>
+    </div>
+
+    <section id="menu">
+      <h2>Nuestro menú</h2>
+      <p>Disfruta de nuestros productos favoritos.</p>
+
+      <div class="productos">
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+            alt="Taza de café"
+          >
+          <h3>Café especial</h3>
+          <p>Un café delicioso y lleno de aroma.</p>
+          <p class="precio">2,50 €</p>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
+            alt="Croissant"
+          >
+          <h3>Croissant artesanal</h3>
+          <p>Recién horneado y crujiente.</p>
+          <p class="precio">2,80 €</p>
+        </div>
+
+        <div class="producto">
+          <img
+            src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600"
+            alt="Tostada de desayuno"
+          >
+          <h3>Desayuno especial</h3>
+          <p>Una deliciosa forma de comenzar el día.</p>
+          <p class="precio">5,90 €</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <h2>Sobre nosotros</h2>
+      <p>
+        En Café Aurora creemos que cada taza de café
+        es una oportunidad para disfrutar de un buen
+        momento. Nos apasiona ofrecer productos de
+        calidad en un ambiente acogedor.
+      </p>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Visítanos</h2>
+      <p>📍 Málaga, España</p>
+      <p>🕘 Lunes a sábado: 8:00 - 20:00</p>
+      <p>📞 Teléfono: pendiente de configurar</p>
+
+      <a
+        class="boton"
+        href="mailto:contacto@ejemplo.com"
+      >
+        Contactar por correo
+      </a>
+    </section>
+<a
+  href="https://wa.me/34600000000"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="boton"
+  style="display:table; margin:20px auto 40px;"
+>
+  💬 Escríbenos por WhatsApp
+</a>
+  </main>
+
+  <footer>
+    <p>© 2026 Café Aurora. Web de demostración.</p>
+  </footer>
+
+</body>
+</html>
